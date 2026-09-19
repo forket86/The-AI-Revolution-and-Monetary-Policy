@@ -26,14 +26,12 @@ Script names are lowercase. There are no separate `fig3.m` or `fig4.m` files. Ke
 
 ## Requirements
 
-- **MATLAB.** The supplied figure PDFs identify MATLAB R2025a as their generating version. The code uses MATLAB tables, timetables, strings, and graphics; GNU Octave compatibility has not been established for this package.
-- **Dynare 7.0** for `fig2.m` and `fig3_fig4.m`. The supplied Dynare logs report version 7.0. See the [Dynare 7.0 release information](https://www.dynare.org/new-dynare-release/dynare-7.0-released/) for compatibility; it lists MATLAB R2020a through R2025b. Use the build appropriate for your operating system and processor.
-- **Internet access and a personal FRED API key** for `fig1.m` only. Obtain a key from the [FRED API key page](https://fred.stlouisfed.org/docs/api/api_key.html).
+- **MATLAB.** We used MATLAB R2025a.
+- **Dynare 7.0** for `fig2.m` and `fig3_fig4.m`. We use Dynare version 7.0. See the [Dynare 7.0 release information](https://www.dynare.org/new-dynare-release/dynare-7.0-released/) for compatibility; it lists MATLAB R2020a through R2025b. Use the build appropriate for your operating system and processor.
+- **Personal FRED API key** for `fig1.m` only. Obtain a key from the [FRED API key page](https://fred.stlouisfed.org/docs/api/api_key.html).
 - Write access to the package folder, where figures and Dynare-generated files are saved.
 
-The clean package contains only the five source files listed above, this README, and an empty `figures/` directory. Dynare-generated MATLAB files and incomplete older figures have been excluded.
-
-No Haver connection is needed by the supplied data-download code. No additional paid MATLAB toolbox is explicitly called by the three scripts; an end-to-end dependency check has not been completed.
+The clean package contains only the five source files listed above, this README, and an empty `figures/` directory. 
 
 ## Initial setup
 
