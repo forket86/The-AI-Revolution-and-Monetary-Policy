@@ -12,7 +12,7 @@ Barlevy, Gadi, Jonas D. M. Fisher, Will Pennington, and Alessandro Villa. 2026. 
 
 ## Overview and contents
 
-This package contains MATLAB scripts and Dynare model files for the article's empirical figure and model simulations, including the habit-persistence and hand-to-mouth exercises in the technical appendix. The replication limitations below apply to the supplied version.
+This package contains MATLAB scripts and Dynare model files for the article's empirical figure and model simulations, including the habit-persistence and hand-to-mouth exercises in the technical appendix. 
 
 | File | Purpose |
 | --- | --- |
