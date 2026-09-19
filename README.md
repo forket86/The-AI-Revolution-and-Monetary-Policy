@@ -60,7 +60,7 @@ The clean package contains only the five source files listed above, this README,
    addpath('/Applications/Dynare/7.0-x86_64/matlab')
    ```
 
-   The supplied scripts enable the Windows path. On an Apple Silicon Mac, comment out that line and uncomment the existing macOS line. On an Intel Mac, use the matching Intel installation path. For Linux or a custom installation, use its actual Dynare `matlab` directory. The `savepath` call is optional and may be commented out if you do not want to save the MATLAB search path permanently or lack permission to do so.
+   The supplied scripts enable the Windows path. On an Apple Silicon Mac, comment out that line and uncomment the existing macOS line. On an Intel Mac, use the matching Intel installation path. For Linux or a custom installation, use its actual Dynare `matlab` directory. 
 
 5. In the **User choices** section of both model scripts, set:
 
@@ -71,11 +71,11 @@ The clean package contains only the five source files listed above, this README,
    do_no_nomrate = 0;
    ```
 
-   **The supplied `fig3_fig4.m` has `printfigs = 0`: change it to `1` to save figures 3 and 4.** The `wageRigidity = 0` branch refers to a model file that is not included.
+   **The supplied `fig3_fig4.m` has `printfigs = 0`: change it to `1` to save figures 3 and 4.** 
 
 ## Running the replication
 
-Edit the settings **inside each script**, then save the files before running. All three scripts begin with `clear`, so assigning configuration variables only in the Command Window does not override their internal settings. They also close existing figure windows.
+Edit the settings **inside each script**.
 
 ### Figure 1: productivity data
 
