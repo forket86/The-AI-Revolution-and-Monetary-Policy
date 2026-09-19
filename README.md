@@ -107,7 +107,6 @@ fig2
 fig3_fig4
 ```
 
-Each model script initializes Dynare independently. Leave the remaining experiment-specific settings at their supplied values; the two scripts intentionally use different shock timing.
 
 ### Technical-appendix exercises
 
@@ -136,15 +135,3 @@ Each figure is saved in **PDF and PNG** format when export is enabled. The model
 | `figures/tank/fig2` | Appendix figure A6 |
 | `figures/tank/fig3` | Appendix figure A7 |
 | `figures/tank/fig4` | Appendix figure A8 |
-
-Appendix figures A1 and A2 are parameter and variable tables, not graphical outputs of these scripts. A complete run of the exercises above should produce 20 figure files. This clean package includes no precomputed figures. Generate them when testing the scripts.
-
-Dynare also creates logs, generated MATLAB code, model working directories, and `.mat` results. These are generated artifacts, not additional input dependencies. The scripts do not require previously generated Dynare files.
-
-## Replication limitations in the supplied version
-
-**Figure 1 data vintage.** The FRED request does not fix a vintage or an observation end date, and no input-data snapshot is included. Consequently, future runs can incorporate revisions and additional observations. The published figure covers 2011:Q1 through 2026:Q2, while the current script uses all available observations and retains a hard-coded “2023-26” label. Exact historical replication requires the publication's data vintage and sample endpoint to be established and preserved. See the [FRED observations API documentation](https://fred.stlouisfed.org/docs/api/fred/series_observations.html) for the relevant date parameters.
-
-**Policy rule in `fig2.m`.** The supplied plotting block uses `idx_cases = [1]`, selecting the case with `use_nat = 0`. The published captions describe a Taylor rule that tracks the natural rate (`use_nat = 1`). This distinction matters for the habit exercise, where the natural rate is nonzero. The code/caption discrepancy must be resolved before claiming exact replication of appendix figure A3. No policy-rule correction is assumed by these instructions.
-
-**Validation status.** The five source files preserve every executable line of the original package; the only additions are standalone `% PACKAGE NOTE:` comments in the three entry-point scripts. File names, settings, dependencies, and output paths have been checked against the supplied source code. The MATLAB/Dynare versions above are identified from existing artifacts; they are not a claim of a new successful end-to-end replication run.
